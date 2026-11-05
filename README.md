@@ -19,6 +19,8 @@ the web export:
 Every cut was proven pixel-identical. The rules were then checked against Godot's engine source and docs and against
 how shipped games stayed fast (Halls of Torment, Cassette Beasts, Vampire Survivors, Noita, Factorio).
 
+**Not using Claude?** The same method as a step-by-step checklist: [GUIDE.md](GUIDE.md).
+
 ## What it covers
 
 - **Checking the machine first**: battery, CPU load and other programs fake slow runs, so it checks them before any timing.
