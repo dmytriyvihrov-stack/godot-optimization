@@ -1,8 +1,28 @@
 {
   "name": "godot-optimization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make a Godot 4 game faster without changing how it looks or plays: measure, split, cut, prove pixel-identical. Compatibility renderer batching, draw calls, redraw on change, GDScript hot paths, physics, loading, V-Sync, web export size.",
-  "author": { "name": "dmytriyvihrov-stack" },
+  "author": {
+    "name": "dmytriyvihrov-stack"
+  },
   "license": "MIT",
-  "keywords": ["godot", "godot4", "performance", "optimization", "gdscript", "gamedev"]
+  "keywords": [
+    "ai",
+    "claude",
+    "ai-game-development",
+    "game-development",
+    "gamedev",
+    "game-optimization",
+    "optimization",
+    "performance",
+    "godot",
+    "godot4",
+    "godot-engine",
+    "gdscript",
+    "fps",
+    "draw-calls",
+    "web-export"
+  ],
+  "homepage": "https://github.com/dmytriyvihrov-stack/godot-optimization",
+  "repository": "https://github.com/dmytriyvihrov-stack/godot-optimization"
 }

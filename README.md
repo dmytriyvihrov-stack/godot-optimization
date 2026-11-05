@@ -1,5 +1,7 @@
 # Godot Optimization: a Claude skill
 
+**Keywords:** AI game development, game optimization, Godot 4 performance, Claude Code plugin, Claude skill, GDScript, FPS, draw calls, web export.
+
 A [Claude](https://claude.com) skill that makes a **Godot 4** game faster **without changing how it looks or plays**.
 Claude checks the machine, measures, splits the frame until the cost has a name, cuts it, proves the new picture is
 pixel-identical to the old one, and compares old and new builds before anything ships.

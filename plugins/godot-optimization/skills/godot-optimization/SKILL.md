@@ -7,7 +7,8 @@ description: >
   draw_polyline vs draw_primitive vs one ArrayMesh), redraw on change, culling, cell-by-cell loops, 2D lights and
   shadows, GPU readback, GDScript hot paths, physics, loading hitches, V-Sync and frame pacing, benchmarks, and a smaller
   web export. Use for any Godot speed work: low FPS, stutter or hitches, slow level loads, too many draw calls, a review
-  of code that draws or runs every frame, a slow web build. Triggers: godot performance, optimize godot, optimise, FPS,
+  of code that draws or runs every frame, a slow web build. Triggers: godot performance, optimize godot, optimise, game
+  optimization, game development, AI game development, gamedev, FPS,
   fps drops, stutter, hitch, frame time, draw calls, batching, vsync, slow web export, pck too big, лаги, тормозит,
   оптимизация, производительность, фпс.
 ---
