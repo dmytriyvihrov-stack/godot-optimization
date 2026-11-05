@@ -1,0 +1,12 @@
+{
+  "name": "godot-optimization",
+  "owner": { "name": "dmytriyvihrov-stack" },
+  "metadata": { "description": "A Claude skill for making Godot 4 games faster without changing how they look or play." },
+  "plugins": [
+    {
+      "name": "godot-optimization",
+      "source": "./plugins/godot-optimization",
+      "description": "Make a Godot 4 game faster without changing how it looks or plays: measure, split, cut, prove pixel-identical."
+    }
+  ]
+}
