@@ -106,6 +106,11 @@ choice to you.
 Godot 4.x (written against 4.7; most of it applies from 4.2). The drawing advice is about the Compatibility renderer
 (OpenGL / WebGL 2); the measuring, scripting, physics and loading parts apply to every renderer.
 
+## Privacy
+
+This plugin collects, stores and sends no data. It is one skill (instructions for Claude) and four GDScript files you
+copy into your own project and run yourself. It has no MCP servers, no hooks, no network calls and no telemetry.
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
