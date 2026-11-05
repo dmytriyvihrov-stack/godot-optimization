@@ -14,8 +14,9 @@ Measured on a 2D game (Godot 4.7, 4 Nov 2026):
 
 ## 1. Measure first
 
-- **The wire**: ask one byte of each file with compression allowed; `Content-Range: bytes 0-0/<n>` is the download size:
-  `curl -s -o /dev/null -D - -r 0-0 -H 'Accept-Encoding: br, gzip' "<url>/index.wasm?x=$RANDOM"`.
+- **The wire**: request only the first byte of each file (an HTTP Range request for bytes 0-0) with an
+  `Accept-Encoding: br, gzip` header and read the response headers only; the total after the slash in
+  `Content-Range: bytes 0-0/<n>` is what a player downloads. Add a throwaway query string so a cache does not answer.
 - **The pack by folder**: a `.pck` (format 3 and 4) has its file directory at the u64 offset stored at byte 32; each
   entry is path length (u32), path, offset (u64), size (u64), md5 (16 bytes), flags (u32). Files under
   `.godot/imported/` map back to their source through the `*.import` files (`path="res://.godot/imported/..."`). Sum by
@@ -35,8 +36,8 @@ Measured on a 2D game (Godot 4.7, 4 Nov 2026):
 
 ## 3. A slim engine (web export template from source)
 
-- Keep the toolchain outside the repo: Godot's source at the exact editor tag (`git clone --depth 1 -b <ver>-stable
-  https://github.com/godotengine/godot.git`), Emscripten at the version Godot's CI uses for that tag (see
+- Keep the toolchain outside the repo: Godot's source checked out at the exact tag of your editor (`<ver>-stable` in
+  the godotengine/godot repository), Emscripten at the version Godot's CI uses for that tag (see
   `.github/workflows/web_builds.yml`, `EM_VERSION`), SCons in a venv.
 - Match the official template you replace: threaded or not (`web_release.zip` is threaded, `web_nothreads_release.zip`
   is not), wasm32. Build `scons platform=web target=template_release threads=yes arch=wasm32 profile=custom.py`.
